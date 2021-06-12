@@ -35,6 +35,10 @@ Once the correct inputs have been provided, the script should be able to compute
 * count of each gender (only available for New York City and Chicago)
 * earliest, most recent and most common year of birth (only available for New York City and Chicago)
 
+After providing the above statistics, the script should also provide the user with the option to view the individual trip data (5 entries at a time).
+
+Finally, the script should provide the user the option of whether or not to restart the program.
+
 ### Files used
 Data files for the three cities:
 * *chicago.csv*
