@@ -16,4 +16,4 @@ Data files for the three cities:
 * *washington.csv*
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+[Udacity](https://knowledge.udacity.com) - The knowledge section within Udacity's Programming for Data Science with Python Nanodegree classroom was very useful in searching for answers to questions i had regarding the project.
