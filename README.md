@@ -41,6 +41,10 @@ Data files for the three cities:
 * *new_york_city.csv*
 * *washington.csv*
 
+All three files contain the same six columns i.e. Start Time, End Time, Trip Duration (seconds), Start Station, End Station and User Type (subscriber or customer).
+
+The _chicago.csv_ and _new_york_city.csv_ files contain two additional columns i.e. Gender and Birth Year.
+
 ### Software requirements
 * Python 3
 * Python libraries - NumPy, Pandas and Time
