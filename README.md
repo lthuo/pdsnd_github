@@ -9,6 +9,32 @@ _Explore US Bikeshare Data_
 ### Project Description
 In this project, Python is used to explore data related to a bikeshare system for three major cities in the United States - **Chicago**, **New York City** and **Washington** towards uncovering the bike usage patterns in these cities.
 
+### Project Details
+The project entails building a python script (**bikeshare.py**) that takes in case insensitive user input on the city (**Chicago**, **New York City** or **Washington**) and period - month (**January** to **June**) and day of the week (**Sunday** to **Saturday**) - they would like to analyze.
+
+The user should key in the month and day of the week using the full names. The user should also have the option of selecting **"all"** in regards to the month and day of week in which case the filters for the period will not apply.
+
+Once the correct inputs have been provided, the script should be able to compute the below descriptive statistics:
+
+**#1 Popular times of travel**
+* most common month
+* most common day of the week
+* most common hour of the day
+
+**#2 Popular stations and trip**
+* most common start station
+* most common end station
+* most common combination of start and end station
+
+**#3 Trip duration**
+* total travel time
+* average travel time
+
+**#4 User information**
+* count of each user type
+* count of each gender (only available for New York City and Chicago)
+* earliest, most recent and most common year of birth (only available for New York City and Chicago)
+
 ### Files used
 Data files for the three cities:
 * *chicago.csv*
