@@ -6,8 +6,8 @@
 ### Project Title
 _Explore US Bikeshare Data_
 
-### Description
-Describe what your project is about and what it does
+### Project Description
+In this project, Python is used to explore data related to a bikeshare system for three major cities in the United States - **Chicago**, **New York City** and **Washington** towards uncovering the bike usage patterns in these cities.
 
 ### Files used
 Include the files used
