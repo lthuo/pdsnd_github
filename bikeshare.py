@@ -210,6 +210,7 @@ def display_data(df):
                 start = 0
                 end = 5
                 data = df.iloc[start:end,:9]
+                pd.set_option('display.max_columns',200)
                 print(data)
             break
         else:
@@ -222,6 +223,7 @@ def display_data(df):
                         start += 5
                         end += 5
                         data = df.iloc[start:end,:9]
+                        pd.set_option('display.max_columns',200)
                         print(data)
                     else:
                         break
@@ -246,3 +248,4 @@ def main():
 
 
 if __name__ == "__main__":
+    main()
