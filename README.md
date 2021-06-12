@@ -15,5 +15,11 @@ Data files for the three cities:
 * *new_york_city.csv*
 * *washington.csv*
 
+### Software requirements
+* Python 3
+* Python libraries - NumPy, Pandas and Time
+* A text editor e.g. Atom, Sublime text etc
+* A terminal application e.g. Gitbash, Cygwin, Terminal etc
+
 ### Credits
 [Udacity](https://knowledge.udacity.com) - The knowledge section within Udacity's Programming for Data Science with Python Nanodegree classroom was very useful in searching for answers to questions i had regarding the project.
