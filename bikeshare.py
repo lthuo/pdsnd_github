@@ -200,6 +200,7 @@ def user_stats(df):
     print('-'*60)
 
 def display_data(df):
+    """Displays five rows of individual trip data from the csv file of the city selected."""
 
     while True:
         response = ['yes','no']
