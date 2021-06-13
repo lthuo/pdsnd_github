@@ -110,7 +110,7 @@ def time_stats(df,month,day):
     print("The most popular start hour is {}:00 hrs ".format(popular_start_hour))
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took {:.2f} seconds.".format(time.time() - start_time))
     print('-'*60)
 
 
@@ -131,10 +131,10 @@ def station_stats(df):
     # TO DO: display most frequent combination of start station and end station trip
     df['combination'] = df['Start Station']+" "+"to"+" "+ df['End Station']
     popular_combination = df['combination'].mode()[0]
-    print("The most frequent combination of start and end Station is {} ".format(popular_combination))
+    print("The most frequent combination of start and end Station is {}".format(popular_combination))
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took {:.2f} seconds.".format(time.time() - start_time))
     print('-'*60)
 
 
@@ -145,7 +145,7 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-    total_trip_duration = df['Trip Duration'].sum()
+    total_trip_duration = round(df['Trip Duration'].sum())
     #Total trip duration in minutes and seconds
     minute, second = divmod(total_trip_duration, 60)
     #Total trip duration in hour and minutes
@@ -164,7 +164,7 @@ def trip_duration_stats(df):
         print("\nThe average trip duration is {} minutes and {} seconds".format(minutes, seconds))
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took {:.2f} seconds.".format(time.time() - start_time))
     print('-'*60)
 
 
@@ -196,10 +196,11 @@ def user_stats(df):
     except:
         print("Sorry, there is no birth year information for this city.")
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took {:.2f} seconds.".format(time.time() - start_time))
     print('-'*60)
 
 def display_data(df):
+    """Displays five rows of individual trip data from the csv file of the city selected."""
 
     while True:
         response = ['yes','no']
@@ -209,11 +210,12 @@ def display_data(df):
                 start = 0
                 end = 5
                 data = df.iloc[start:end,:9]
+                pd.set_option('display.max_columns',200)
                 print(data)
             break
         else:
             print("Please enter a valid response")
-    if  choice == 'yes':
+    if choice == 'yes':
             while True:
                 choice_2 = input("Would you like to view more trip data? Type 'yes' or 'no'\n").lower()
                 if choice_2 in response:
@@ -221,6 +223,7 @@ def display_data(df):
                         start += 5
                         end += 5
                         data = df.iloc[start:end,:9]
+                        pd.set_option('display.max_columns',200)
                         print(data)
                     else:
                         break
@@ -245,3 +248,4 @@ def main():
 
 
 if __name__ == "__main__":
+    main()
